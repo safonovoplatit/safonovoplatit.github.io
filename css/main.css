@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#main {
+    padding-top: 100px;
+}
+
+.wrapper {
+    color: black;
+    background: #E7E6E6;
+    width: 100%;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 30%;
+    font-size: 16px;
+    font-weight: 0;
+    background: white;
+    position: fixed;
+    z-index: 1;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.logo--img {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin: -5px 0;
+
+}
+
+header nav {
+    float: right;
+    width: 60%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a, header span.logo a {
+    color: black;
+    transition: all 500ms ease;
+}
+
+
+header nav ul li:not(.button) a:hover, header span.logo a:hover {
+    color: #515151;
+    
+}
+
+header nav ul li.button a {
+    background: #141414;
+    color: #E7E6E6;
+    padding: 9px 17px;
+
+    transition: all 500ms ease;
+}
+
+header nav ul li.button a:hover {
+    background: #3044FF;
+    border-radius: 10px;
+}
+
+
+.hero {
+    position: relative;
+}
+
+.hero--main {
+    padding: 30vh 0;
+    text-align: center;
+    color: white;
+    /* background: #141414; */
+    
+}
+
+.hero h1 {
+    font-size: 92px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 31.25px;
+    font-weight: 500;
+}
+
+
+
+#bgVideo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+.hero div.button {
+    margin-top: 10vh;
+}
+
+.hero div.button a {
+    background: #141414;
+    color: #E7E6E6;
+    padding: 24px 80px;
+    font-size: 30px;
+    /* border-radius: 20px; */
+
+    transition: all 500ms ease;
+    
+
+}
+
+.hero div.button a:hover {
+    background: #3044FF;
+}
+
+
+
+/* .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right,rgba(65, 0, 255, 0.4),rgba(255, 0, 232, 0.3));
+    top: 0;
+    left: 0;
+} */
+
+/* Галлерея */
+
+
+.gallery {
+    padding: 50px 0;
+}
+
+.gallery h3{
+    font-size: 41.67px;
+    font-weight: bold;
+}
+
+.gallery .see-all {
+
+    text-align: center;
+}
+
+.gallery .see-all a {
+
+    font-size: 25px;
+    color: #E7E6E6;
+    background: #141414;
+    padding: 12px 35px;
+
+    transition: all 500ms ease;
+    
+}
+
+.gallery .see-all a:hover {
+    /* padding: 15px 70px; */
+    font-size: 2em;
+    background: #3044FF;
+}
+
+.gallery .fences {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.gallery .fences div.block {
+    width: 32%;
+    height: 40;
+    background: #EEEEEE;
+    transition: all 500ms ease;
+    
+}
+
+.gallery .fences div.block div:not(.description) {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.gallery .fences div.block div.description {
+    
+    padding: 15px 10px;
+}
+
+.gallery .fences div.block:hover {
+    box-shadow: 0 0 10px #242323;
+}
+
+
+.classes h3 {
+    font-size: 41.67px;
+    font-weight: 600;
+    padding: 80px 0;
+}
+
+.classes .banner {
+    background: #e0dcdc;
+    padding: 80px 40px;
+    margin-bottom: 10px;
+}
+
+.classes .banner h4 {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.classes .banner div.brief, .classes .banner div.second .description {
+    font-size: 22px;
+    font-weight:normal;
+    padding: 10px 0;
+}
+
+.classes .banner img {
+    width: 30%;
+    height: 30%;
+}
+
+.classes .banner div.description {
+    font-size: 20px;
+    font-weight:normal;
+    padding: 10px 200px;
+    margin-left: 30px;
+}
+
+.classes .banner div.second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separator {
+    height: 4px;
+    width: 80vh;
+    background: #7d7a7a;
+    margin-bottom: 20px;
+
+}
+
+.partners h3 {
+    font-size: 41.67px;
+    font-weight: 600;
+    padding: 30px 0;
+    
+}
+
+.partners .block div {
+    font-size: 20px;
+    font-weight:normal;
+    margin-bottom: 20px;
+    
+}
+
+.partners .block div.part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners .block div.part img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.stipuha h4 {
+    font-size: 41.67px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.stipuha div.brief {
+    font-size: 20px;
+    font-weight:normal;
+    margin-bottom: 20px;
+}
+
+.stipuha div.second img {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.stipuha {
+    padding-bottom: 20px;
+    padding-top: 80px;
+    background: #e0dcdc;
+}
+.stipuha * {
+    padding-left: 40px;
+}
+
+
+.karta {
+    margin-top: 150px;
+}
+
+.karta .places {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.karta .places div.block {
+    width: 32%;
+    height: 40;
+    background: #EEEEEE;
+    transition: all 500ms ease;
+    
+}
+
+.karta .places div.block div:not(.description) {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.karta .places div.block div {
+    
+    padding: 15px 10px;
+}
+
+.karta .places div.block:hover {
+    box-shadow: 0 0 10px #242323;
+}
+
+.karta h4 {
+    font-size: 41.67px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.find div.block {
+    padding: 50px 0;
+}
+
+.find h4 {
+    font-size: 41.67px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.find div.block img {
+    width: 76%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: all 500ms ease;
+}
+
+.find div.block img:hover  {
+    box-shadow: 0 0 10px #242323;
+}
+
+/* Нижняя часть */
+
+.mail {
+    padding: 100px 0;
+}
+
+.mail div.block {
+    background: #e0dcdc;
+    margin-top: 30px;
+    padding: 50px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mail div.block h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mail div.block input {
+    background: #e0dcdc;
+    outline: none;
+    border: 2px solid #141414;
+    width: 360px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 9px 22px;
+    display: block;
+}
+/* 
+.mail div.block input::placeholder {
+    color: #E7E6E6;
+} */
+
+
+.mail div.block button {
+    
+    background: #141414;
+    color: #E7E6E6;
+    padding: 9px 17px;
+    border: 0;
+    text-transform: uppercase;
+    margin-top: 30px;
+    
+    transition: all 500ms ease;
+
+    font-size: 18px;
+    
+    width: 100%;
+}
+
+.mail div.block button:hover {
+    background: #3044FF;
+}
+
+header nav ul li.button a:hover {
+    background: #3044FF;
+    border-radius: 10px;
+}
+
+
+footer {
+    background: #141414;
+    padding: 50px;
+    color: white;
+}
+
+footer div.blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.blocks div .logo {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+footer .blocks p {
+    width: 60%;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer .blocks ul {
+    list-style: none;
+
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    color: #e0dcdc;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 1px;
+    background: #e0dcdc;
+}
+
+footer div.block a {
+    float: left;
+}
+
+footer div.block p {
+    text-align: center;
+}
+
+footer div.blocks div:has(.logo) {
+    flex: 2;
+}
+footer div.blocks div:not(:has(.logo)) {
+    flex: 1
+}
+
+@media screen and (max-width: 2000px) {
+    .container {
+        width: 98%;
+    }
+    header {
+        padding: 20px 1%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header nav ul {
+        display: inline;
+    }
+
+    .buttons {
+        padding-top: 20px;
+    }
+
+    header nav ul {
+        float: right;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    /* .hero h2 {
+        font-size: 20px;
+    } */
+}
+
+@media screen and (max-width: 500px) {
+    header .logo {
+        float: none;
+    }
+
+    header nav {
+        float: none;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    header nav ul .buttons * {
+        display: block;
+    }
+
+    header nav ul .buttons *:first-of-type {
+        margin-bottom: 10px;
+    }
+
+    header {
+        position: static;
+    }
+
+    #bgVideo {
+        min-height: 0;
+        height: 65vh;
+    }
+
+    .hero div.button {
+        margin-top: 4vh;
+    }
+    
+    .hero div.button a {
+        padding: 9px 30px;
+        font-size: 20px;
+    }
+    
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    /* факультеты */
+
+    .classes .banner img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .classes .banner div.second {
+        display: block;
+    }
+    
+    .separator {
+        height: 4px;
+        width: 40vh;
+        /* margin-bottom: 20px; */
+    
+    }
+
+    .container {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .classes .banner {
+        padding: 40px 20px;
+        /* margin-bottom: 10px; */
+    }
+    .classes .banner .second div.description {
+        margin-left: 5px;
+    }
+
+    .classes h3 {
+        font-size: 30px;
+        padding-bottom: 35px;
+    }
+
+    /* заборы */
+    
+    .gallery h3{
+        font-size: 35px;
+    }
+    
+    /* .gallery .see-all a {
+        font-size: 25px;
+        padding: 12px 35px;
+    } */
+    
+    .gallery .see-all a:hover {
+        font-size: 1em;
+    }
+    
+    .gallery .fences {
+        display: block;
+        width: 100%;
+    }
+    
+    .gallery .fences div.block {
+        width: 98%;
+        margin: 50px 1%;
+    }
+    
+    .gallery .fences div.block div:not(.description), .gallery .fences div.block div.description {
+        padding: 7.5px 5px;
+    }
+    
+    .gallery .fences div.block:hover {
+        box-shadow: 0 0 0;
+    }
+
+    /* партнеры */
+
+    .partners h3 {
+        font-size: 35px;
+        padding: 30px 0;
+        
+    }
+    
+    /* .partners .block div {
+        font-size: 20px;
+        margin-bottom: 20px;
+    } */
+    
+    .partners .block div.part {
+        display: block;
+    }
+
+    /* стипуха */
+
+    .stipuha h4 {
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+    
+    .stipuha div.brief {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .stipuha img {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .stipuha {
+        padding-top: 30px;
+    }
+    .stipuha *:not(img) {
+        padding-left: 5px;
+    }
+    
+    /* map */
+
+    .karta {
+        margin-top: 30px;
+    }
+    
+    .karta .places {
+        display: block;
+        padding: 50px 0;
+    }
+    
+    .karta .places div.block {
+        width: 98%;
+        margin: 25px 1%;
+    }
+    
+    .karta .places div.block div:not(.description) {
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .karta .places div.block div {
+        padding: 0;
+    }
+    
+    .karta h4 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    
+    .find div.block {
+        padding: 25px 0;
+    }
+    
+    .find h4 {
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+    
+    .find div.block img {
+        width: 98%;
+        padding: 0 1%;
+    }
+    
+    /* Нижняя часть */
+    
+    .mail {
+        padding: 50px 0;
+    }
+    
+    .mail div.block {
+        margin-top: 15px;
+        padding: 40px 3%;
+        width: 94%;
+        display: block;
+    }
+    
+    .mail div.block h4 {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    
+    .mail div.block input {
+        width: 80%;
+        font-size: 18px;
+        padding: 9px 10%;
+    }
+
+    /* footer */
+    
+    footer {
+        padding: 25px;
+    }
+    
+    footer div.blocks {
+        display: block;
+    }
+    
+    footer div.blocks div .logo {
+        font-size: 20px;
+    }
+    
+    footer .blocks p {
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    footer .blocks h4 {
+        font-size: 16px;
+    }
+    
+    footer .blocks ul li {
+        margin-top: 7px;
+    }
+
+    footer .blocks div:not(:has(.logo)) {
+        padding-top: 20px;
+    }
+    
+    /* footer hr {
+        margin: 30px 0;
+        height: 1px;
+    }
+    
+    footer div.block a {
+        float: left;
+    }
+    
+    footer div.block p {
+        text-align: center;
+    }
+    
+    footer div.blocks div:has(.logo) {
+        flex: 2;
+    }
+    footer div.blocks div:not(:has(.logo)) {
+        flex: 1
+    } */
+
+}
+
+@media screen and (max-width: 500px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .classes .banner h4 {
+        font-size: 25px;
+    }
+}
