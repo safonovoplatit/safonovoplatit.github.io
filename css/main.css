@@ -565,10 +565,12 @@ footer div.blocks div:not(:has(.logo)) {
 
     header nav ul li {
         display: block;
+        z-index: 1;
+        position: relative;
     }
 
     header nav ul .buttons * {
-        display: block;
+        display: block; 
     }
 
     header nav ul .buttons *:first-of-type {
