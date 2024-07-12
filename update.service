@@ -1,0 +1,14 @@
+# Pull&install the site
+# Remember to adjust WorkingDirectory and ExecStart parameters if needed
+
+[Unit]
+Description=Install site to apache after pulling
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pi/safonovoplatit.github.io
+ExecStart=/usr/bin/sudo -u pi git pull
+ExecStart=/home/pi/safonovoplatit.github.io/install.sh
+
+[Install]
+WantedBy=multi-user.target
