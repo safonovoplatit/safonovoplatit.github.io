@@ -121,5 +121,52 @@
 
 
 .plates {
+    padding: 0 50px;
+}
+
+
+
+.head h2 {
+    font-size: 41.34px;
+    color: #141414;
+    padding: 20px 0;
+}
+
+.head h3 {
+    font-size: 19.38px;
+    font-weight: normal;
+    color: #141414;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.head {
     padding: 50px;
+}
+
+.head .line h1 {
+    font-size: 27.67;
+    color: #141414;
+
+}
+
+.head .line h4 {
+    font-size: 15.63px;
+    color: #141414;
+    font-weight: normal;
+}
+
+.head .line {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.head .line div {
+    background: #EEEEEE;
+    padding: 20px;
+}
+
+.head .line:not(:first-of-type) {
+    margin-top: 50px;
 }
