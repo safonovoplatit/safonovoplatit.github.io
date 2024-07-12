@@ -80,7 +80,6 @@ header nav ul li a, header span.logo a {
 
 header nav ul li:not(.button) a:hover, header span.logo a:hover {
     color: #515151;
-    
 }
 
 header nav ul li.button a {
@@ -117,7 +116,6 @@ footer div.blocks div .logo {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    
 }
 
 footer .blocks p {
@@ -135,9 +133,15 @@ footer .blocks ul {
 
 }
 
-footer .blocks ul li {
+footer .blocks ul li a {
     margin-top: 7px;
     color: #e0dcdc;
+
+    transition: all 500ms ease;
+}
+
+footer .blocks ul li a:hover {
+    color: #7d7a7a;
 }
 
 footer hr {
