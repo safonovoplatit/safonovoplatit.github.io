@@ -3,6 +3,8 @@
 
 [Unit]
 Description=Install site to apache after pulling
+Wants=network-online.target
+After=network-online.target
 
 [Service]
 Type=oneshot
