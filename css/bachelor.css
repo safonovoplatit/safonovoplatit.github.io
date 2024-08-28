@@ -205,3 +205,31 @@
     display: flex;
     
 }
+
+.head h1 {
+    font-size: 41.34px;
+    color: #141414;
+    padding: 20px 0;
+}
+/* 
+.head .cards div.block {
+    background: #EEEEEE;
+    padding: 20px;
+} */
+
+.wrapper > div > img {
+    width: 100%;
+    height: auto;
+    display: block; /* Чтобы убрать возможные пробелы */
+}
+
+
+.orbit h2 {
+    margin-left: 50px;
+    font-size: 41.34px;
+    color: #EEEEEE;
+    padding: 60px 0;
+    background-color: #141414;
+    background-size: 100%;
+}
+
