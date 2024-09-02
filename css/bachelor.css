@@ -225,11 +225,46 @@
 
 
 .orbit h2 {
-    margin-left: 50px;
     font-size: 41.34px;
     color: #EEEEEE;
     padding: 60px 0;
     background-color: #141414;
     background-size: 100%;
+    text-align: center;
+}
+
+.orbit h3 {
+    font-size: 27.67px;
+    padding-bottom: 50px;
+    color: #EEEEEE;
+    background-color: #141414;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+
+.wrapper.cards {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.wrapper .block {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.wrapper .block img {
+    width: 60px; 
+    height: 150px;
+    object-fit: contain; 
+}
+
+.cards {
+    margin-left: 45px;
 }
 
