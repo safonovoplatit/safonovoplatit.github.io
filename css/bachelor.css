@@ -171,3 +171,38 @@
     margin-top: 50px;
 }
 
+
+.roadmap h1 {
+
+    font-size: 27.67;
+    color: #141414;
+
+}
+
+.roadmap {
+    padding: 50px;
+}
+
+.roadmap .blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.roadmap h1 {
+    font-size: 27.67;
+    color: #141414;
+}
+
+
+
+.roadmap .blocks h2 {
+    font-size: 27.67;
+    color: #3044FF;
+}
+
+.roadmap .blocks {
+    display: flex;
+    
+}
+
