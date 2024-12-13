@@ -1,0 +1,9 @@
+div.main-header {
+    padding-bottom: 25px;
+}
+
+div.main-header h1 {
+    padding-bottom: 15px;
+    font-size: 41.67px;
+    font-weight: bold;
+}
