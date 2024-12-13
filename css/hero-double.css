@@ -1,0 +1,79 @@
+.wrapper {
+    background: #E7E6E6;
+    color: #141414;
+}
+
+.hero {
+    background: #E7E6E6;
+    padding: 150px 0;
+    position: relative;
+}
+
+.hero .hero--info {
+    display: flex;
+}
+
+.hero .hero--info .hero--main {
+    color: #141414;
+    text-align: left;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+}
+
+.hero .hero--info .hero--image img {
+    margin-top: -25px;
+    width: 100%;
+}
+
+
+
+
+.hero .hero--info .hero--main, .hero .hero--info .hero--image {
+    padding: 0 50px;
+    width: 50%;
+}
+
+.hero .hero--info .hero--main h1 {
+    font-size: 53.37px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.hero .hero--info .hero--main h2 {
+    font-size: 23.63px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.hero .hero--info .hero--main h3, .hero .hero--info .hero--main p {
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-weight: normal;
+}
+
+.hero .hero--info .hero--main div.button a {
+    background: #E7E6E6;
+    border: 2px solid #141414;
+    font-size: 16px;
+    padding: 10px;
+    color: #141414;
+}
+
+
+
+#line-bottom, #line {
+    border: none;
+    background: #141414;
+}
+
+#line-bottom {
+    height: 3px;
+    margin: 25px;
+}
+
+
+#line {
+    width: 17px;
+    /* margin: 10px; */
+}
