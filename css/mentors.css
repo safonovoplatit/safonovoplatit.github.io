@@ -7,3 +7,9 @@ div.main-header h1 {
     font-size: 41.67px;
     font-weight: bold;
 }
+
+.classes h3 {
+    font-size: 41.67px;
+    font-weight: 600;
+    padding: 80px 0;
+}
