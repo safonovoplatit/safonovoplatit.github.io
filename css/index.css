@@ -150,7 +150,7 @@
     padding: 20px 0;
 }
 
-.classes .banner div.brief, .classes .banner div.second .description {
+.classes .banner div.brief, .classes .banner .second .description {
     font-size: 22px;
     font-weight:normal;
     padding: 10px 0;
@@ -161,11 +161,9 @@
     height: 30%;
 }
 
-.classes .banner div.description {
-    font-size: 20px;
-    font-weight:normal;
-    padding: 10px 200px;
+.classes .banner .second div.description {
     margin-left: 30px;
+    width: 70%;
 }
 
 .classes .banner div.second {
