@@ -33,12 +33,12 @@ img {
     margin: 0 auto;
 }
 
-header {
-    padding: 20px 30%;
+header, header.wrapper {
+    padding: 20px 25%;
     font-size: 16px;
     font-weight: 0;
     background: white;
-    position: fixed;
+    position: sticky;
     z-index: 1;
 }
 
@@ -173,16 +173,16 @@ footer div.blocks div:not(:has(.logo)) {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 2200px) {
     .container {
         width: 98%;
     }
-    header {
+    header, header.wrapper {
         padding: 20px 1%;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     header nav ul {
         display: inline;
     }
@@ -209,6 +209,7 @@ footer div.blocks div:not(:has(.logo)) {
         display: block;
         z-index: 1;
         position: relative;
+        margin-top: 5px;
     }
 
     header nav ul .buttons * {
@@ -219,8 +220,9 @@ footer div.blocks div:not(:has(.logo)) {
         margin-bottom: 10px;
     }
 
-    header {
+    header, header.wrapper {
         position: static;
+        /* padding-bottom: 50px; */
     }
 
     /* footer */
