@@ -1,0 +1,79 @@
+.banners .banners--title {
+    padding: 80px 0;
+}
+
+.banners .banners--title h1 {
+    font-size: 41.67px;
+    font-weight: 600;
+}
+
+.banners .banners--title h2 {
+    padding-top: 35px;
+}
+
+.banners .banner {
+    background: #e0dcdc;
+    padding: 80px 40px;
+    margin-bottom: 10px;
+}
+
+.banners .banner h4 {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.banners .banner div.brief, .banners .banner .second .description {
+    font-size: 22px;
+    font-weight:normal;
+    padding: 10px 0;
+}
+
+.banners .banner img {
+    width: 30%;
+    height: 30%;
+}
+
+.banners .banner .second div.description {
+    margin-left: 30px;
+    width: 70%;
+}
+
+.banners .banner div.second {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 500px) {
+    .banners .banner img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banners .banner div.second {
+        display: block;
+    }
+
+    .banners .banner {
+        padding: 40px 20px;
+        /* margin-bottom: 10px; */
+    }
+    .banners .banner .second div.description {
+        margin-left: 5px;
+    }
+
+    .banners .banners--title {
+        padding-bottom: 35px;
+    }
+
+    .banners .banners--title h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banners .banner h4 {
+        font-size: 25px;
+    }
+}

@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заборостроительный университет. Поступай в топовый ВУЗ!</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/shared/main.css">
+    <link rel="stylesheet" href="/css/shared/banner.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="icon" type="image/x-icon" href="/img/zu_logo.png">
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="container">
-            <span class="logo">
-                <a href="/index.html">
-                    <img src="img/zu_logo.png" alt="Logo" class="logo--img">
-                    Заборостроительный <br>Университет</span>
-                </a>
-            <nav>
-                <ul>
-                    <li><a href="bachelor.html">Бакалавриат</a></li>
-                    <li><a href="/mentors.html">Преподаватели</a></li>
-                    <li><a href="/university_info.html">Об университете</a></li>
-                    <div class="buttons">
-                        <li class="button" id="call"><a href="tel:84959529161">Связаться</a></li>
-                        <li class="button"><a href="/index2.html">Личный кабинет</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header class="wrapper container">
+        <span class="logo">
+            <a href="/index.html">
+                <img src="img/zu_logo.png" alt="Logo" class="logo--img">
+                Заборостроительный <br>Университет</span>
+            </a>
+        <nav>
+            <ul>
+                <li><a href="bachelor.html">Бакалавриат</a></li>
+                <li><a href="/mentors.html">Преподаватели</a></li>
+                <li><a href="/university_info.html">Об университете</a></li>
+                <div class="buttons">
+                    <li class="button" id="call"><a href="tel:84959529161">Связаться</a></li>
+                    <li class="button"><a href="/index2.html">Личный кабинет</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
     <div class="hero">
-        <video id="bgVideo" preload="true" autoplay loop muted>
+        <video class="hero--video" preload="true" autoplay loop muted>
             <source src="vid/dog fence.mp4" type="video/mp4" />
         </video>
         <div class="hero--main">
@@ -45,12 +45,14 @@
 
 
     <div class="wrapper" id="main">
-        <div class="classes container">
-            <h3>Направления обучения</h3>
+        <div class="container banners">
+            <div class="banners--title">
+                <h1>Направления обучения</h1>
+            </div>
             <div class="banner">
                 <h4>Шурупно-гвоздевое заборостроение</h4>
                 <div class="brief">Ты научишься трансформировать абстрактные идеи <br> в надежно стоящие заборы, ограды и сетки </div>
-                <div class="separator"></div>
+                <hr>
                 <div class="second">
                     <img src="img/gigachad.jpeg" alt="gigachad">
                     <div class="description">На факультете функционируют две кафедры — кафедра зубчатых заборов и кафедра прямоспиленных заборов.
@@ -61,7 +63,7 @@
             <div class="banner">
                 <h4>Сетка Рабица</h4>
                 <div class="brief">Ты научишься делать заборы из подручных материалов </div>
-                <div class="separator"></div>
+                <hr>
                 <div class="second">
                     <img src="img/girl.jpeg" alt="Anime Tyan">
                     <div class="description">На факультете работает кафедра сетки Рабица, которая подготавливает профессиональных изготовителей сетки Рабица по специальностям раб и pro-раб.</div>
@@ -72,7 +74,7 @@
             <div class="banner">
                 <h4>Нанозаборостроение</h4>
                 <div class="brief">Ты поймешь, как развивать мир заборов на основе ИИ</div>
-                <div class="separator"></div>
+                <hr>
                 <div class="second">
                     <img src="img/nano.jpeg" alt="Anime Tyan">
                     <div class="description">Название факультета — «Научно абсурдное но общепринятое заборостроение». Факультет был открыт совсем недавно, но его сотрудники уже успели пропить весь государственный грант. Ученые факультета работали очень продуктивно: в течение 2024 года ими были получены такие уникальные материалы, как умный забор, забор gpt и забор фенолосодержащий(последний состав был немедленно засекречен правительством, а его разработчиков в цепях увезли в тайные подземные лаборатории ФСБ). Помимо узкоспециализированных высокотехнологичных разработок факультет занимается также гражданскими разработками: в частности, его работники вывели сорта кокса «Сапожник», «Веселая мельница», «Угадайка» и экспериментальный сорт «Ытлрос», каждый из которых получил ГОСТ, кроме последнего (во время проверки качеств продукта весь его запас был уничтожен). Шикарен факультет своей умопомрачительной популярностью и мифами овеяными вокруг него…
@@ -174,7 +176,6 @@
     </div>
     
     <footer>
-        
         <div class="blocks container">
             <div>
                 <span class="logo">Заборостроительный Университет</span>
@@ -211,7 +212,5 @@
             <p>Все права не защищены. Общество с Обществом Общества (ООО) "Вася Пупкин"</p>
         </div>
     </footer>
-
-
 </body>
 </html>
