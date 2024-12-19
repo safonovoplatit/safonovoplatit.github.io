@@ -173,6 +173,12 @@ footer div.blocks div:not(:has(.logo)) {
     margin-bottom: 20px;
 }
 
+a.button2 {
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
 a.button, button, div.button a, li.button a {
     background: #141414;
     color: #E7E6E6;
