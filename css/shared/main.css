@@ -39,14 +39,14 @@ header, header.wrapper {
     font-weight: 0;
     background: white;
     position: sticky;
-    z-index: 1;
+    top: 0;
 }
 
 header .logo {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    
+    float: left;
 }
 
 .logo--img {
@@ -60,6 +60,10 @@ header .logo {
 header nav {
     float: right;
     width: 60%;
+}
+
+header .resizer {
+    clear: both;
 }
 
 header nav ul {
@@ -83,15 +87,10 @@ header nav ul li:not(.button) a:hover, header span.logo a:hover {
 }
 
 header nav ul li.button a {
-    background: #141414;
-    color: #E7E6E6;
     padding: 9px 17px;
-
-    transition: all 500ms ease;
 }
 
 header nav ul li.button a:hover {
-    background: #3044FF;
     border-radius: 10px;
 }
 
@@ -169,8 +168,20 @@ footer div.blocks div:not(:has(.logo)) {
 .separator, hr {
     height: 4px;
     /* width: 80vh; */
+    width: auto;
     background: #7d7a7a;
     margin-bottom: 20px;
+}
+
+a.button, button, div.button a, li.button a {
+    background: #141414;
+    color: #E7E6E6;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+a.button:hover, button:hover, div.button a:hover, li.button a:hover {
+    background: #3044FF;
 }
 
 @media screen and (max-width: 2200px) {
@@ -190,19 +201,15 @@ footer div.blocks div:not(:has(.logo)) {
     .buttons {
         padding-top: 20px;
     }
-
-    header nav ul {
-        float: right;
-    }
 }
 
-@media screen and (max-width: 500px) {
-    header .logo {
+@media screen and (max-width: 650px) {
+    header .logo, header nav {
         float: none;
     }
 
-    header nav {
-        float: none;
+    header .resier {
+        clear: none;
     }
 
     header nav ul li {
@@ -279,7 +286,7 @@ footer div.blocks div:not(:has(.logo)) {
 
     .separator, hr {
         height: 4px;
-        width: 40vh;
+        width: auto;
         /* margin-bottom: 20px; */
     
     }

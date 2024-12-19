@@ -46,15 +46,9 @@
 }
 
 .hero div.button a {
-    background: #141414;
-    color: #E7E6E6;
     padding: 24px 80px;
     font-size: 30px;
     /* border-radius: 20px; */
-
-    transition: all 500ms ease;
-    
-
 }
 
 .hero div.button a:hover {
@@ -90,14 +84,8 @@
 }
 
 .gallery .see-all a {
-
     font-size: 25px;
-    color: #E7E6E6;
-    background: #141414;
     padding: 12px 35px;
-
-    transition: all 500ms ease;
-    
 }
 
 .gallery .see-all a:hover {
@@ -294,23 +282,11 @@
 
 
 .mail div.block button {
-    
-    background: #141414;
-    color: #E7E6E6;
     padding: 9px 17px;
-    border: 0;
     text-transform: uppercase;
     margin-top: 30px;
-    
-    transition: all 500ms ease;
-
     font-size: 18px;
-    
     width: 100%;
-}
-
-.mail div.block button:hover {
-    background: #3044FF;
 }
 
 @media screen and (max-width: 900px) {
@@ -323,10 +299,10 @@
     } */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .hero .hero--video {
         min-height: 0;
-        height: 65vh;
+        /* height: 65vh; */
     }
 
     .hero div.button {

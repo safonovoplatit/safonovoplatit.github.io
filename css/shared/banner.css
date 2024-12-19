@@ -1,5 +1,5 @@
 .banners .banners--title {
-    padding: 80px 0;
+    padding-bottom: 80px;
 }
 
 .banners .banners--title h1 {
@@ -24,9 +24,14 @@
 }
 
 .banners .banner div.brief, .banners .banner .second .description {
-    font-size: 22px;
-    font-weight:normal;
     padding: 10px 0;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.banners .banner div.subtitle {
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .banners .banner img {
@@ -44,8 +49,14 @@
     justify-content: space-between;
 }
 
+.banners .banner div.second a.button {
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 650px) {
     .banners .banner img {
         width: 100%;
         height: 100%;
@@ -61,6 +72,7 @@
     }
     .banners .banner .second div.description {
         margin-left: 5px;
+        width: 100%;
     }
 
     .banners .banners--title {
@@ -70,9 +82,11 @@
     .banners .banners--title h1 {
         font-size: 30px;
     }
-}
 
-@media screen and (max-width: 500px) {
+    .banners .banners--title {
+        padding-bottom: 40px;
+    }
+
     .banners .banner h4 {
         font-size: 25px;
     }
