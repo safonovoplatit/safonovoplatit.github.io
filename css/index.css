@@ -164,11 +164,10 @@
     margin-bottom: 20px;
 }
 
-.stipuha div.second img {
+.stipuha img {
     width: 50%;
     height: 50%;
     margin: 10px;
-    margin-bottom: 100px;
 }
 
 .stipuha {
@@ -460,6 +459,9 @@
         padding: 9px 10%;
     }
 
+    .stipuha img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {
