@@ -326,7 +326,7 @@
 @media screen and (max-width: 650px) {
     .hero .hero--video {
         min-height: 0;
-        height: 65vh;
+        /* height: 65vh; */
     }
 
     .hero div.button {
