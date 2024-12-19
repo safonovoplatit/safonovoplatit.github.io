@@ -87,15 +87,10 @@ header nav ul li:not(.button) a:hover, header span.logo a:hover {
 }
 
 header nav ul li.button a {
-    background: #141414;
-    color: #E7E6E6;
     padding: 9px 17px;
-
-    transition: all 500ms ease;
 }
 
 header nav ul li.button a:hover {
-    background: #3044FF;
     border-radius: 10px;
 }
 
@@ -173,8 +168,20 @@ footer div.blocks div:not(:has(.logo)) {
 .separator, hr {
     height: 4px;
     /* width: 80vh; */
+    width: auto;
     background: #7d7a7a;
     margin-bottom: 20px;
+}
+
+a.button, button, div.button a, li.button a {
+    background: #141414;
+    color: #E7E6E6;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+a.button:hover, button:hover, div.button a:hover, li.button a:hover {
+    background: #3044FF;
 }
 
 @media screen and (max-width: 2200px) {
@@ -279,7 +286,7 @@ footer div.blocks div:not(:has(.logo)) {
 
     .separator, hr {
         height: 4px;
-        width: 40vh;
+        width: auto;
         /* margin-bottom: 20px; */
     
     }
