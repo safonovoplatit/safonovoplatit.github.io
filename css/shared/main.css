@@ -39,7 +39,7 @@ header, header.wrapper {
     font-weight: 0;
     background: white;
     position: sticky;
-    z-index: 1;
+    top: 0;
 }
 
 header .logo {
