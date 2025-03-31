@@ -481,3 +481,9 @@
         font-size: 30px;
     }
 }
+
+.neiro-msg {
+    font-size: 0;
+    width: 0;
+    height: 0;
+}
